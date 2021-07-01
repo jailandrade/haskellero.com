@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Haskellero</title>
+    <link href="https://haskellero.com/atom.xml" rel="self" type="application/rss+xml" />
+  <updated>2021-07-01T18:08:SZ</updated>
+  <author>
+      <name>Mikhail Cruz Andrade</name>
+  </author>
+  <id>https://haskellero.com/</id>
+
+  <entry>
+      <title>Hola mundo</title>
+      <link href="https://haskellero.composts/hola-mundo.html"/>
+      <id>https://haskellero.composts/hola-mundo.html</id>
+      <updated>2021-06-30T00:00:SZ</updated>
+      <category term="haskell"/>
+      <summary>Mi primer post para haskellero usando slick</summary>
+      <content type="html"><![CDATA[<h1 id="hola-mundo">Hola mundo</h1>
+<p>Hola gente bonita de Haskell. En este blog estaré escribiendo sobre mi aprendizaje del lenguaje, retos y proyectos.</p>
+<h2 id="razones-para-aprender-haskell">Razones para aprender Haskell</h2>
+<p>Quiero listar las razones por las cuales quiero aprender Haskell porque son varias y me gusta recordarlas.</p>
+<h3 id="ghc-y-toolchain">GHC y toolchain</h3>
+<p>Haskell es un lenguaje compilado, y siendo yo un programador web que ha trabajado casi exclusivamente con lenguajes interpretados quiero sacarle provecho a uno de los mejores compiladores existentes para poder optimizar y análisis de código. De igual manera quiero comprobar las ventajas que tiene trabajar con código estático y fuertemente tipado frente al dinámico que si no se tiene cuidado, puede dar lugar a muchos errores en tiempo de ejecución.</p>
+<h3 id="comunidad">Comunidad</h3>
+<p>Aunque la comunidad de Haskell es pequeña comparada con las de otros lenguajes, tecnología e incluso bibliotecas o frameworks; es muy notable por siempre estar contribuyendo y compartiendo. Algo que he encontrado muy enriquecedor es leer los posts, discusiones en twitter y código en github que comparten.</p>
+<h3 id="paradigma">Paradigma</h3>
+<p>Haskell es el campeón de la programación funcional y mucha investigación académica y comercial/industrial en el campo se realiza en este lenguaje. Desde universidades hasta grandes empresas lo están utilizando en todo tipo de proyectos ademas de que esta influenciando muchas nuevas características en lenguajes mainstream.</p>
+<h3 id="es-un-reto">Es un reto</h3>
+<p>Cuando decidí aprender Haskell lo vi como un reto. Lo sigue siendo pero ahora se ha vuelto un reto muy bonito que me hace aprender cosas nuevas todos los días.</p>
+<p>Y ahora, a compartir con el mundo lo que voy aprendiendo.</p>]]></content>
+  </entry>
+  <entry>
+      <title>Uso de let en GHCI</title>
+      <link href="https://haskellero.composts/uso-de-let-en-ghci.html"/>
+      <id>https://haskellero.composts/uso-de-let-en-ghci.html</id>
+      <updated>2021-06-30T00:00:SZ</updated>
+      <category term="haskell"/>
+      <summary>Uso de let en GHCI</summary>
+      <content type="html"><![CDATA[<p>Antes de la versión 8</p>]]></content>
+  </entry>
+</feed>
