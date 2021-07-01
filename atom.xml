@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Haskellero</title>
     <link href="https://haskellero.com/atom.xml" rel="self" type="application/rss+xml" />
-  <updated>2021-07-01T18:08:SZ</updated>
+  <updated>2021-07-01T18:20:SZ</updated>
   <author>
       <name>Mikhail Cruz Andrade</name>
   </author>
@@ -15,8 +15,7 @@
       <updated>2021-06-30T00:00:SZ</updated>
       <category term="haskell"/>
       <summary>Mi primer post para haskellero usando slick</summary>
-      <content type="html"><![CDATA[<h1 id="hola-mundo">Hola mundo</h1>
-<p>Hola gente bonita de Haskell. En este blog estaré escribiendo sobre mi aprendizaje del lenguaje, retos y proyectos.</p>
+      <content type="html"><![CDATA[<p>Hola gente bonita de Haskell. En este blog estaré escribiendo sobre mi aprendizaje del lenguaje, retos y proyectos.</p>
 <h2 id="razones-para-aprender-haskell">Razones para aprender Haskell</h2>
 <p>Quiero listar las razones por las cuales quiero aprender Haskell porque son varias y me gusta recordarlas.</p>
 <h3 id="ghc-y-toolchain">GHC y toolchain</h3>
