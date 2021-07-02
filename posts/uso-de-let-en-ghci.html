@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head profile="http://www.w3.org/2005/10/profile">
-    <meta charset="UTF-8">
+<html lang="es">
+<head>
+    <meta charset="utf-8">
     <meta name="description" content="Haskellero">
     <meta name="author" content="jailandrade">
     <meta name=viewport content="width=device-width, initial-scale=1">
@@ -12,75 +12,62 @@
     <meta name="twitter:description" content="Uso de let en GHCI">
     <meta name="twitter:image" content="https://haskellero.com/images/code.jpg">
     <title>Uso de let en GHCI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/syntax.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a id="beacon" href="/">
-                <div id="home-text"> HOME </div>
-            </a>
+<div class="page">
+    <header class="site-header">
+        <nav class="site-nav">
+            <h1 class="title"><a href="/">Haskellero</a></h1>
         </nav>
-    
-        <div class="right-sidebar">
-            <a class="ext-link" href="https://github.com/jailandrade">
-            <img src="/images/github-logo.png" alt="Github Profile"/>
-        </a>
-
-            <a class="ext-link" href="https://twitter.com/jailandrade">
-            <img src="/images/twitter-logo.png" alt="Twitter Profile"/>
-        </a>
-    <div id="theme-button">DAY</div>
-        </div>
     </header>
+    <article class="article">
+        <section class="article-header">
+            <h1 class="title">Uso de let en GHCI</h1>
 
-<div id="page">
-    <div class="wrapper">
-        <div class="masthead">
-            <span class="title">
-                Uso de let en GHCI
-            </span>
-            <br>
+            <p class="article-authored">
+                <span class="byline">escrito por jailandrade</span> el
+                <span class="date">Jun 30, 2021</span>
+            </p>
 
-            <img class="post-image" src="/images/code.jpg">
-            <br>
-            <span class="byline">by jailandrade</span>
-            <br>
-            <span class="date">Jun 30, 2021</span>
-            <br>
             <div class="metadata">
             </div>
-            <div class="tags">
+
+            <div class="article-tags">
               <span class="tag haskell">haskell</span>
             </div>
+
+            <div class="article-thumbnail">
+                <img class="post-image" src="/images/code.jpg">
+            </div>
+        </section>
+        <section class="article-content">
+            <p>Antes de la versión 8 de GHCi, se necesitaba usar la palabra clave <code>let</code> al momento de definir una función o variable. Esto ya no es necesario pero si estas aprendiendo Haskell con libros como <em>Learn you a Haskell for great good</em> o algún tutorial o post antiguo te saldrá esta recomendación.</p>
+<h3 id="razon-por-la-que-se-usaba-let">Razon por la que se usaba let</h3>
+<p>Cuando escribes una expresión en GHCi, inmediatamente se evaluá e imprime el resultado. Pero GHCi también puede ejecutar computaciones de tipo IO y también puede aceptar declaraciones por lo que puedes unir valores y funciones a nombres y usarlos en expresiones o declaraciones en el futuro.</p>
+<p>La sintaxis de las declaraciones aceptadas en el GHCi debe ser la misma de una declaración de tipo bloque do en Haskell, así:</p>
+<pre><code>Prelude&gt; valor ← return &quot;algun valor&quot;
+Prelude&gt; print valor</code></pre>
+<p>Lo que significa <em>ejecuta return "algun valor" en el tipo IO y unelo a valor</em></p>
+<p>La otra forma en la que se definía una declaración era con let de esta forma:</p>
+<pre><code>Prelude&gt; let otroValor = &quot;otro valor&quot;</code></pre>
+<p>Y esto se conoce como una declaración no monadica o de tipo no IO pero desde la versión 8.0.1 de GHCi ya no es necesario usarla.</p>
+        </section>
+        <div class="article-footer">
+            <!--site/templates/social-buttons.html -->
         </div>
-    </div>
-    <article class="post">
-        <p>Antes de la versión 8</p>
+    </article>
 
-        <br>
-        <br>
-
-        <!--Share buttons-->
-        <div class="social-buttons">
-            <a href="https://twitter.com/share" class="twitter-share-button"
-                                                data-url="https://haskellero.com" data-text="Check out: Uso de let en GHCI - " data-via="jailandrade">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            <a href="https://twitter.com/jailandrade" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @jailandrade</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            <div class="fb-like" data-href="" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-        </div>
-</article>
-
-</div>
-
-<footer>
-    Built with Haskell using <a href="https://github.com/ChrisPenner/slick">slick</a> ❤️
-</footer>
-
-<link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<script src="/js/main.js"></script>
-</body>
-</html>
+    <footer class="site-footer">
+        Construido con Haskell usando <a href="https://github.com/ChrisPenner/slick">slick</a> ❤️
+    </footer>
+    
+    </div> <!-- .page -->
+    </body>
+    </html>
