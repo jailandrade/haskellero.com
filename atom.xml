@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Haskellero</title>
     <link href="https://haskellero.com/atom.xml" rel="self" type="application/rss+xml" />
-  <updated>2021-07-02T01:15:SZ</updated>
+  <updated>2021-07-02T01:20:SZ</updated>
   <author>
       <name>Mikhail Cruz Andrade</name>
   </author>
@@ -40,7 +40,8 @@
 <p>Cuando escribes una expresión en GHCi, inmediatamente se evaluá e imprime el resultado. Pero GHCi también puede ejecutar computaciones de tipo IO y también puede aceptar declaraciones por lo que puedes unir valores y funciones a nombres y usarlos en expresiones o declaraciones en el futuro.</p>
 <p>La sintaxis de las declaraciones aceptadas en el GHCi debe ser la misma de una declaración de tipo bloque do en Haskell, así:</p>
 <pre><code>Prelude&gt; valor ← return &quot;algun valor&quot;
-Prelude&gt; print valor</code></pre>
+Prelude&gt; print valor
+&quot;algun valor&quot;</code></pre>
 <p>Lo que significa <em>ejecuta return "algun valor" en el tipo IO y unelo a valor</em></p>
 <p>La otra forma en la que se definía una declaración era con let de esta forma:</p>
 <pre><code>Prelude&gt; let otroValor = &quot;otro valor&quot;</code></pre>
